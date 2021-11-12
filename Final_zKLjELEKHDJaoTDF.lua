@@ -10,7 +10,7 @@ TextColor = Color3.fromRGB(255, 255, 255)
 local venyx = library.new("Boxing Sim", 5012544693)
 local page = venyx:addPage("Auto Stuff", 5012544693)
 local section = page:addSection("Auto Stuff")
-local hum = game.Players.LocalPlayer.Character.HumanoidRootPart
+local hum = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
 
 getgenv().a = false
 
@@ -160,7 +160,7 @@ end)
 
 local page2 = venyx:addPage("Ilhas", 5012544693)
 local section2 = page2:addSection("Ilhas Individuais")
-local hum = game.Players.LocalPlayer.Character.HumanoidRootPart
+local hum = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
 section2:addButton("Fascinating Fire", function()
     hum.CFrame = CFrame.new(16313.6865, 18312.8164, -35174.8633, 0.998401582, 0, 0.0565183163, 0, 1, 0, -0.0565183163, 0, 0.998401582)
 end)
