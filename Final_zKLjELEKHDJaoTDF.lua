@@ -40,7 +40,8 @@ section:addToggle("Autofarm Cane", nil, function(value)
         while getgenv().a == true do
             for i,v in ipairs(game:GetService("Workspace").Canes:GetDescendants()) do
     if v:isA("Part") then
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+        v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+
         wait(0.2)
     end
         end
